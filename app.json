@@ -31,6 +31,17 @@
         "projectId": "747bf13d-b38d-4df2-abaa-390396a0ef27"
       }
     },
-    "owner": "devport"
+    "build": {
+      "development": {
+        "node": "18",
+        "npm": "9",
+        "expoCli": "latest",
+        "npmArgs": ["--legacy-peer-deps"]
+      }
+    },
+    "owner": "devport",
+    "android": {
+      "package": "com.devport.stickyidea"
+    }
   }
 }

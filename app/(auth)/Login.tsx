@@ -16,7 +16,7 @@ import Animated, { FadeInDown } from "react-native-reanimated";
 import { useRouter } from "expo-router";
 import { http } from "@/utils/http"; // assuming your axios instance is here
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import Ionicons from "react-native-vector-icons/Ionicons";
+import { Feather } from "@expo/vector-icons";
 
 export default function Login() {
   const router = useRouter();
@@ -121,7 +121,7 @@ export default function Login() {
           <TouchableOpacity
             onPress={() => setIsPasswordVisible((prev) => !prev)}
           >
-            <Ionicons
+            <Feather
               name={isPasswordVisible ? "eye-off" : "eye"}
               size={22}
               color="#666"
